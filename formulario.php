@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
   
    if (empty($usuario) || empty($password) || empty($edad)) {
-       echo  "Todos los campos son obligatorios";
+       echo  "Todos los campos deben estar llenos";
    }
 
    if (!is_numeric($edad) || $edad < 18) {
